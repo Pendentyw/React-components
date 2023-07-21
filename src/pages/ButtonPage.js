@@ -1,4 +1,4 @@
-import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
+import { GoBell, GoDot, GoDatabase } from 'react-icons/go';
 import Button from '../components/Button';
 
 function ButtonPage() {
@@ -21,7 +21,7 @@ function ButtonPage() {
         <Button
           danger
           outline>
-          <GoCloudDownload />
+          <GoDot />
           fr
         </Button>
       </div>

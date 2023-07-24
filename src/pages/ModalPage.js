@@ -9,6 +9,26 @@ function ModalPage() {
     setShowModal(true);
   };
 
+  const handleClose = () => {
+    setShowModal(false);
+  };
+
+  const actionBar = (
+    <Button
+      onClick={handleClose}
+      primary>
+      <span className='text-xs'>I Accept</span>
+    </Button>
+  );
+
+  const modal = (
+    <Modal
+      onClose={handleClose}
+      actionBar={actionBar}>
+      <p className='w-4/5 text-sm mb-2'>Would you like to save your progress</p>
+    </Modal>
+  );
+
   return (
     <div>
       <Button
@@ -16,7 +36,7 @@ function ModalPage() {
         primary>
         Open Modal
       </Button>
-      {showModal && <Modal />}
+      {showModal && modal}
     </div>
   );
 }

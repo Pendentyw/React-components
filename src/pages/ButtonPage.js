@@ -2,40 +2,33 @@ import { GoBell, GoDot, GoDatabase } from 'react-icons/go';
 import Button from '../components/Button';
 
 function ButtonPage() {
-  const clickHandler = () => {
-    console.log('fatifati');
-  };
+  const clickHandler = () => {};
 
   return (
-    <div>
+    <div className='flex flex-col'>
       <div>
         <Button
           success
           rounded
           onClick={clickHandler}>
-          <GoBell />
-          Fati
+          Pat Fati
         </Button>
       </div>
       <div>
         <Button
           danger
           outline>
-          <GoDot />
-          fr
+          Click Lyyyś
         </Button>
       </div>
       <div>
-        <Button warning>
-          <GoDatabase />
-          Srati
-        </Button>
+        <Button warning>Srati</Button>
       </div>
       <div>
-        <Button secondary>pierdziati</Button>
+        <Button secondary>Pierdziati</Button>
       </div>
       <div>
-        <Button primary>fweew</Button>
+        <Button primary>Hiiiipć</Button>
       </div>
     </div>
   );

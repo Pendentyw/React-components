@@ -1,1 +1,1 @@
-Made with course Modern React with Redux from Stephen Grider
+Made with course Modern React with Redux [Stephen Grider]

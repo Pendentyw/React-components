@@ -8,11 +8,11 @@ function Dropdown({ options, value, onChange }) {
   //obiekt current i tam jest dopiero ref do diva
 
   useEffect(() => {
-    const handler = (event) => {
+    const handler = (e) => {
       if (!divElement.current) {
         return;
       }
-      if (!divElement.current.contains(event.target)) {
+      if (!divElement.current.contains(e.target)) {
         setIsOpen(false);
       }
     };

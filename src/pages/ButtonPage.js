@@ -5,7 +5,7 @@ function ButtonPage() {
   const clickHandler = () => {};
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col '>
       <div>
         <Button
           success

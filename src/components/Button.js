@@ -11,7 +11,7 @@ function Button({
   rounded,
   ...rest
 }) {
-  const classes = className(rest.classname, ' flex px-5 py-2 m-1 border', {
+  const classes = className(rest.classname, ' flex px-5 py-2  border', {
     'border-blue-500 bg-blue-400 hover:bg-blue-300': primary,
     'border-gray-700 bg-gray-600 hover:bg-gray-500': secondary,
     'border-green-500 bg-green-400 hover:bg-green-300': success,

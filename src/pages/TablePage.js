@@ -11,11 +11,15 @@ function TablePage() {
   ];
 
   const config = [
-    { label: 'Name', render: (fruit) => fruit.name, sortValue: (fruit) => fruit.name },
-    { label: 'Color', render: (fruit) => <div className={`p-3 m-2 ${fruit.color}`}></div> },
+    {
+      label: 'Name',
+      render: (fruit) => <div className='p-1 m-1 '>{fruit.name}</div>,
+      sortValue: (fruit) => fruit.name,
+    },
+    { label: 'Color', render: (fruit) => <div className={`p-3 m-3 ${fruit.color}`}></div> },
     {
       label: 'Score',
-      render: (fruit) => fruit.score,
+      render: (fruit) => <div className='p-1 m-1 justify-center flex'>{fruit.score}</div>,
       sortValue: (fruit) => fruit.score,
     },
   ];
